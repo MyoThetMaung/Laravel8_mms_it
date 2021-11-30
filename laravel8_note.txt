@@ -1,0 +1,20 @@
+1. Creating model, migration and controller in one command
+
+  php artisan make:model <model name> -mc 
+    where m = migration 
+          c = controller
+
+2. Creating table in database
+    php artisan migrate
+
+3. Showing data message  
+    For example,    
+        return redirect()->route('create')->with('status','New contact created!');\
+
+        @if(session('status'))
+            <small>{{session('status')}}</small>
+        @endif
+
+4.
+
+
